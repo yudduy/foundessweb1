@@ -97,9 +97,9 @@ export default function LandingPage() {
           <div className="flex items-center space-x-4">
             <Link
               href="#waitlist"
-              className="rounded-md bg-[#786eff] px-4 py-2 font-medium text-white transition-all hover:bg-[#6a5ee0]"
+              className="rounded-md bg-gradient-to-r from-[#786eff] to-[#efff82] px-4 py-2 font-medium text-black transition-all hover:opacity-90"
             >
-              Join Waitlist
+              $99/month
             </Link>
             <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -159,25 +159,25 @@ export default function LandingPage() {
         <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8 junicode">
-              <span className="text-[#efff82]">We fundraise</span> so founders can build.
+              <span className="text-[#efff82]">Fundraising</span> on <span className="text-[#786eff]">autopilot</span>.
             </h1>
           </div>
           <div
-            className="animate-fade-in-up flex justify-center space-x-4 opacity-0"
-            style={{ animationDelay: "0.6s" }}
+          className="animate-fade-in-up flex justify-center space-x-4 opacity-0"
+          style={{ animationDelay: "0.6s" }}
           >
-            <Link
-              href="#waitlist"
-              className="rounded-md bg-[#786eff] px-8 py-4 font-medium text-white transition-all hover:bg-[#6a5ee0] text-lg"
-            >
-              Request Early Access
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="flex items-center rounded-md border border-white/20 px-8 py-4 font-medium text-white transition-all hover:bg-white/10 text-lg"
-            >
-              Learn More <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+          <Link
+          href="#waitlist"
+          className="rounded-md bg-gradient-to-r from-[#786eff] to-[#efff82] px-8 py-4 font-medium text-black transition-all hover:opacity-90 text-lg"
+          >
+          Start for $99/month
+          </Link>
+          <Link
+          href="#how-it-works"
+          className="flex items-center rounded-md border border-white/20 px-8 py-4 font-medium text-white transition-all hover:bg-white/10 text-lg"
+          >
+          See How It Works <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
           </div>
         </div>
       </section>
@@ -187,11 +187,11 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
-              <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">The Founder's Dilemma</h2>
+              <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">The Early-Stage Founder's Challenge</h2>
             </div>
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
               <p className="mb-12 text-xl text-white/80">
-                40% of a founder's time is spent fundraising instead of building. We're changing that.
+              Pre-seed and seed founders spend 40% of their time on fundraising instead of product. We fix that.
               </p>
             </div>
           </div>
@@ -215,8 +215,8 @@ export default function LandingPage() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#efff82] text-black">
                 <Network className="h-6 w-6" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Network Barriers</h3>
-              <p className="text-black/70">Limited connections mean missed opportunities with the right investors.</p>
+              <h3 className="mb-2 text-xl font-bold">Limited Network</h3>
+              <p className="text-black/70">Early-stage founders lack connections to the right investors for their specific vision.</p>
             </div>
 
             <div
@@ -237,11 +237,11 @@ export default function LandingPage() {
       <section id="features" className="container mx-auto px-4 py-20">
         <div className="mx-auto max-w-3xl text-center">
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
-            <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">How Hatch Helps You</h2>
+            <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">How We Solve Your Fundraising Problems</h2>
           </div>
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
             <p className="mb-12 text-xl text-white/80">
-              AI-powered fundraising automation that gives you back your time.
+              AI-powered investor matching and outreach that expands your network instantly.
             </p>
           </div>
         </div>
@@ -391,7 +391,9 @@ export default function LandingPage() {
             <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">What Founders Are Saying</h2>
           </div>
           <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
-            <p className="mb-12 text-xl text-white/80">Early access users are already seeing transformative results.</p>
+            <p className="mb-12 text-xl text-white/80">
+              Pre-seed and seed founders are saving time and closing rounds faster with our Starter Plan.
+            </p>
           </div>
         </div>
 
@@ -417,14 +419,13 @@ export default function LandingPage() {
               </svg>
             </div>
             <p className="mb-4 text-white/80">
-              "Closed our seed round in half the time. AI introductions were spot-on and document automation saved us
-              countless hours."
+            "As a first-time founder with no investor connections, Hatch expanded my network overnight. Closed our pre-seed round in just 6 weeks."
             </p>
             <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full bg-[#786eff]/20"></div>
+              <div className="h-10 w-10 rounded-full bg-[#786eff]/20 flex items-center justify-center text-[#786eff] font-bold">JL</div>
               <div className="ml-3">
-                <p className="font-medium">Sarah Chen</p>
-                <p className="text-sm text-white/60">CEO, TechStartup</p>
+                <p className="font-medium">Jamie Liu</p>
+                <p className="text-sm text-white/60">Founder, Pre-seed SaaS</p>
               </div>
             </div>
           </div>
@@ -454,10 +455,10 @@ export default function LandingPage() {
               while still closing our round."
             </p>
             <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full bg-[#efff82]/20"></div>
+              <div className="h-10 w-10 rounded-full bg-[#efff82]/20 flex items-center justify-center text-[#efff82] font-bold">AR</div>
               <div className="ml-3">
-                <p className="font-medium">Michael Rodriguez</p>
-                <p className="text-sm text-white/60">Founder, AIStartup</p>
+                <p className="font-medium">Alex Robinson</p>
+                <p className="text-sm text-white/60">Technical Founder, Seed Stage</p>
               </div>
             </div>
           </div>
@@ -483,14 +484,13 @@ export default function LandingPage() {
               </svg>
             </div>
             <p className="mb-4 text-white/80">
-              "The matching algorithm is incredible. Connected with perfect VCs for our stage. Automated follow-ups kept
-              our pipeline moving effortlessly."
+            "With no connections in the VC world, I thought fundraising would take 6+ months. With Hatch's Starter Plan, I closed my pre-seed in 8 weeks."
             </p>
             <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full bg-[#786eff]/20"></div>
+              <div className="h-10 w-10 rounded-full bg-[#786eff]/20 flex items-center justify-center text-[#786eff] font-bold">SM</div>
               <div className="ml-3">
-                <p className="font-medium">Aisha Johnson</p>
-                <p className="text-sm text-white/60">CTO, HealthTech</p>
+                <p className="font-medium">Sasha Miller</p>
+                <p className="text-sm text-white/60">Solo Founder, Pre-seed Fintech</p>
               </div>
             </div>
           </div>
@@ -502,210 +502,116 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.2s" }}>
-              <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">Early Access Pricing</h2>
+              <h2 className="mb-6 text-3xl font-bold md:text-4xl junicode">Pricing Made for Founders</h2>
             </div>
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
               <p className="mb-12 text-xl text-white/80">
-                Join our waitlist for early access and special founding member pricing.
+                Affordable pricing that grows with you, designed for early-stage startups.
               </p>
             </div>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div
-              className="animate-fade-in-up rounded-lg border border-white/10 bg-black/50 p-6 opacity-0"
+              className="animate-fade-in-up rounded-lg border-2 border-[#efff82] bg-gradient-to-br from-black to-black/80 p-8 opacity-0 shadow-lg shadow-[#efff82]/10 relative overflow-hidden"
               style={{ animationDelay: "0.6s" }}
             >
-              <div className="mb-4 text-center">
-                <h3 className="text-xl font-bold">For Founders</h3>
-                <div className="flex justify-center items-center gap-4 my-4">
-                  <span className={`text-sm ${!founderPricingToggle ? "text-white" : "text-white/60"}`}>
-                    Monthly Fee
-                  </span>
-                  <button
-                    onClick={() => setFounderPricingToggle(!founderPricingToggle)}
-                    className="relative inline-flex h-6 w-11 items-center rounded-full bg-[#786eff]/30"
-                  >
-                    <span
-                      className={`inline-block h-4 w-4 transform rounded-full bg-white transition ${founderPricingToggle ? "translate-x-6" : "translate-x-1"}`}
-                    />
-                  </button>
-                  <span className={`text-sm ${founderPricingToggle ? "text-white" : "text-white/60"}`}>Deal %</span>
+              {/* Abstract graphic element */}
+              <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gradient-to-br from-[#786eff]/10 to-[#efff82]/10 blur-3xl"></div>
+              
+              <div className="relative z-10">
+                <div className="mb-8 text-center">
+                  <span className="inline-block px-3 py-1 text-xs font-medium bg-[#efff82]/20 text-[#efff82] rounded-full mb-2">STARTER PLAN</span>
+                  <h3 className="text-2xl font-bold mb-4">For Early-Stage Founders</h3>
+                  
+                  <div className="flex justify-center items-baseline gap-2 my-6">
+                    <span className="text-5xl font-bold">$99</span>
+                    <span className="text-white/60">/month</span>
+                  </div>
+                  
+                  <p className="text-sm text-white/70 mt-2">or $990/year (save 2 months)</p>
+                  
+                  <div className="w-16 h-1 bg-gradient-to-r from-[#786eff] to-[#efff82] mx-auto my-6"></div>
+                  
+                  <p className="text-white/80 max-w-md mx-auto">Perfect for pre-seed and seed-stage founders beginning their fundraising journey</p>
                 </div>
-                <div className="my-4">
-                  {!founderPricingToggle ? (
-                    <>
-                      <span className="text-4xl font-bold">$499</span>
-                      <span className="text-white/60">/month</span>
-                    </>
-                  ) : (
-                    <>
-                      <span className="text-4xl font-bold">2%</span>
-                      <span className="text-white/60"> of deal size</span>
-                    </>
-                  )}
+                
+                <ul className="mb-8 space-y-4">
+                  <li className="flex items-start">
+                    <svg
+                      className="mr-3 h-5 w-5 text-[#efff82] mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>
+                      <strong className="block text-white">AI-Powered Investor Matching</strong>
+                      <span className="text-white/70 text-sm">Connect with investors perfectly aligned with your vision</span>
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="mr-3 h-5 w-5 text-[#efff82] mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>
+                      <strong className="block text-white">Automated Outreach</strong>
+                      <span className="text-white/70 text-sm">Personalized introductions that maximize response rates</span>
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="mr-3 h-5 w-5 text-[#efff82] mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>
+                      <strong className="block text-white">Funnel Management</strong>
+                      <span className="text-white/70 text-sm">Track and optimize your fundraising pipeline effortlessly</span>
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="mr-3 h-5 w-5 text-[#efff82] mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span>
+                      <strong className="block text-white">SAFE Document Generation</strong>
+                      <span className="text-white/70 text-sm">One-click creation of legally vetted investment documents</span>
+                    </span>
+                  </li>
+                </ul>
+                
+                <div className="pt-4 border-t border-white/10">
+                  <Link
+                    href="#waitlist"
+                    id="waitlist"
+                    className="block w-full rounded-md bg-gradient-to-r from-[#786eff] to-[#efff82] py-4 text-center font-medium text-black transition-all hover:opacity-90"
+                  >
+                    Get Early Access
+                  </Link>
+                  
+                  <p className="mt-4 text-center text-sm text-white/60">
+                    No credit card required. Cancel anytime.
+                  </p>
                 </div>
-                <p className="text-white/70">Limited spots available for early founders</p>
-              </div>
-              <ul className="mb-6 space-y-3">
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Unlimited AI-powered investor introductions
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Full funnel management
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  SAFE document automation
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Priority founder support
-                </li>
-              </ul>
-              <Link
-                href="#waitlist"
-                className="block w-full rounded-md bg-[#786eff] py-3 text-center font-medium text-white transition-all hover:bg-[#6a5ee0]"
-              >
-                Join Founder Waitlist
-              </Link>
-              <div className="mt-4 text-center">
-                <Link href="#" className="text-sm text-[#efff82] hover:underline">
-                  Inquire about free trial
-                </Link>
-              </div>
-            </div>
-
-            <div
-              className="animate-fade-in-up rounded-lg border border-white/10 bg-black/50 p-6 opacity-0"
-              style={{ animationDelay: "0.8s" }}
-            >
-              <div className="mb-4 text-center">
-                <h3 className="text-xl font-bold">For Investors</h3>
-                <div className="flex justify-center items-center gap-4 my-4">
-                  <span className={`text-sm ${!investorPricingToggle ? "text-white" : "text-white/60"}`}>
-                    Monthly Fee
-                  </span>
-                  <button
-                    onClick={() => setInvestorPricingToggle(!investorPricingToggle)}
-                    className="relative inline-flex h-6 w-11 items-center rounded-full bg-[#786eff]/30"
-                  >
-                    <span
-                      className={`inline-block h-4 w-4 transform rounded-full bg-white transition ${investorPricingToggle ? "translate-x-6" : "translate-x-1"}`}
-                    />
-                  </button>
-                  <span className={`text-sm ${investorPricingToggle ? "text-white" : "text-white/60"}`}>Deal %</span>
-                </div>
-                <div className="my-4">
-                  {!investorPricingToggle ? (
-                    <>
-                      <span className="text-4xl font-bold">$299</span>
-                      <span className="text-white/60">/month</span>
-                    </>
-                  ) : (
-                    <>
-                      <span className="text-4xl font-bold">2%</span>
-                      <span className="text-white/60"> of deal size</span>
-                    </>
-                  )}
-                </div>
-                <p className="text-white/70">Early access for select investors</p>
-              </div>
-              <ul className="mb-6 space-y-3">
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  AI-matched startup deal flow
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Portfolio tracking dashboard
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Automated due diligence tools
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="mr-2 h-5 w-5 text-[#efff82]"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  Priority investor support
-                </li>
-              </ul>
-              <Link
-                href="#waitlist"
-                id="waitlist"
-                className="block w-full rounded-md bg-[#efff82] py-3 text-center font-medium text-black transition-all hover:bg-[#e5f570]"
-              >
-                Join Investor Waitlist
-              </Link>
-              <div className="mt-4 text-center">
-                <Link href="#" className="text-sm text-[#efff82] hover:underline">
-                  Inquire about free trial
-                </Link>
               </div>
             </div>
           </div>
@@ -784,7 +690,7 @@ export default function LandingPage() {
             </div>
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.4s" }}>
               <p className="mb-8 text-xl text-white/90">
-                Join our waitlist for early access to the future of fundraising.
+                Start for just $99/month and transform your fundraising process today.
               </p>
             </div>
             <div className="animate-fade-in-up opacity-0" style={{ animationDelay: "0.6s" }}>
@@ -799,7 +705,7 @@ export default function LandingPage() {
                   type="submit"
                   className="rounded-md bg-[#efff82] px-6 py-3 font-medium text-gray-900 shadow-sm transition-all hover:bg-[#e5f570]"
                 >
-                  Join Waitlist
+                  Start for $99/month
                 </button>
               </form>
               <p className="mt-4 text-sm text-white/70">
@@ -910,12 +816,12 @@ export default function LandingPage() {
       {/* Persistent CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-md py-4 border-t border-white/10">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
-          <p className="text-white/80 mb-4 sm:mb-0">Ready to transform your fundraising process?</p>
+          <p className="text-white/80 mb-4 sm:mb-0"><span className="text-[#efff82]">$99/month</span> · Perfect for pre-seed & seed founders</p>
           <Link
             href="#waitlist"
-            className="rounded-md bg-[#efff82] px-6 py-2 font-medium text-black transition-all hover:bg-[#e5f570]"
+            className="rounded-md bg-gradient-to-r from-[#786eff] to-[#efff82] px-6 py-2 font-medium text-black transition-all hover:opacity-90"
           >
-            Join Waitlist
+            Get Started
           </Link>
         </div>
       </div>
